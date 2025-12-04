@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>A Song For You</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <div class="left-col">
+      <div class="art-frame">
+        <img src="images/art.jpg" alt="art">
+      </div>
+      <div class="note">
+        <h2>Hey there hot stuff. You've been pranked! <3.</h2>
+        <p>
+          Hey there, so I lied. I actually made this site for you. Something small yaknow, im not always the greatest with my words.
+		 Anxiousness or last night where I was just so full of butterflies. That being said though, I had a wonderful time last night getting to talk to you and see you face to face and i wanted to do something to express to 
+		 you just how good it was. Youre so kind and caring. Thoughtful and intelligent. Just oh so funny and quick witted. and my oh my you have a face that could send any mans heart ablaze, i know it surely
+         lit a fire in mine. Heres a song that i think can accurately give you my thoughts and an image of your favorite painters reendition of your favorite Disney movie, I include it to show that I listen and care
+         about you as a person, your interest and likes and the things that you find resonate with you. Sure the more physical desires had their claws in me by the end of last night, but I fell for you before any of that
+		 and its important to me you know that without a shadow of a doubt. 
+         - With the appropiate amount of care and passion, your not secret admirer, B.K.
+        </p>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="video-container">
+        <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" 
+    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/soundcloud%253Atracks%253A1274637562&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+</iframe>
+<div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;">
+  <a href="https://soundcloud.com/charles-mcgillen-677277975" title="Charles Mcgillen" target="_blank" style="color: #cccccc; text-decoration: none;">Charles Mcgillen</a> · 
+  <a href="https://soundcloud.com/charles-mcgillen-677277975/hooked-jared-benjamin" title="Hooked jared benjamin" target="_blank" style="color: #cccccc; text-decoration: none;">Hooked jared benjamin</a>
+</div>
+
+      </div>
+
+      <div class="controls">
+        <a href="index.html" class="button subtle">Back</a>
+        <a class="button" id="playBtn">Play</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('playBtn').addEventListener('click', function () {
+      const iframe = document.getElementById('ytplayer');
+      iframe.src = iframe.src.indexOf('autoplay=1') === -1 ? iframe.src.replace('autoplay=0','autoplay=1') : iframe.src;
+      iframe.focus();
+    });
+  </script>
+</body>
+</html>
